@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: high-performance-llm-inference-engine
+Version: 0.1.0
+Summary: High-performance LLM inference engine with continuous batching, KV cache management, speculative decoding, and quantization
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26
+Requires-Dist: torch>=2.2
+Requires-Dist: pytest>=8.0
+Dynamic: license-file
+
+# high-performance-llm-inference-engine
+Inference server supporting continuous batching, KV cache management, speculative decoding and INT4/INT8 quantization
