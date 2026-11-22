@@ -1,4 +1,4 @@
-"""Model adapter interfaces."""
+"""Placeholder model adapter. No weights are loaded and nothing runs."""
 
 from dataclasses import dataclass
 

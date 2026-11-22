@@ -1,4 +1,8 @@
-"""Quantization abstractions for INT4/INT8 execution."""
+"""Placeholder for quantisation: an enum and a string.
+
+No weights are quantised. Real engines load INT4/INT8 (AWQ, GPTQ) or FP8 weights with
+scales and dequantise inside the GEMM kernel.
+"""
 
 from enum import Enum
 

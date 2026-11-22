@@ -1,4 +1,4 @@
-"""Minimal inference server skeleton."""
+"""Placeholder server. There is no HTTP, streaming or inference; ``run`` returns a string."""
 
 from dataclasses import dataclass
 from typing import List
@@ -11,7 +11,7 @@ class InferenceRequest:
 
 
 class InferenceServer:
-    """A lightweight server placeholder for orchestration logic."""
+    """Placeholder; stores requests and never runs them."""
 
     def __init__(self, model_name: str = "demo-model") -> None:
         self.model_name = model_name

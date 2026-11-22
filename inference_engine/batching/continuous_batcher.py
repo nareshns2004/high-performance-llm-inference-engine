@@ -1,4 +1,11 @@
-"""Continuous batching primitives."""
+"""Placeholder batch queue. This is STATIC batching, not continuous batching.
+
+``add_request`` raises once the queue is full, and ``next_batch`` drains the whole batch at
+once. Real continuous (iteration-level) batching re-forms the batch every decode step:
+finished sequences leave, waiting ones join if the token budget and free KV blocks allow,
+long prompts are chunked, and requests are preempted (recompute or swap) under memory
+pressure instead of being rejected.
+"""
 
 from dataclasses import dataclass, field
 from typing import List
