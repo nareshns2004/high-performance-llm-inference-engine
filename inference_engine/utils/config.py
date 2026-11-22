@@ -1,4 +1,4 @@
-"""Simple configuration helpers."""
+"""Placeholder configuration with three fields."""
 
 from dataclasses import dataclass
 

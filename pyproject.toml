@@ -5,14 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "high-performance-llm-inference-engine"
 version = "0.1.0"
-description = "High-performance LLM inference engine with continuous batching, KV cache management, speculative decoding, and quantization"
+description = "Archived placeholder; superseded by kvwire (see docs/adr/0001-superseded-by-kvwire.md)"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-  "numpy>=1.26",
-  "torch>=2.2",
-  "pytest>=8.0",
-]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+include = ["inference_engine*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
